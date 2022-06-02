@@ -1,0 +1,115 @@
+/* Colores de la app */
+
+:root {
+    --primary: #FF7171;
+    --seconday: #3B3B3B;
+    --light: #FFFFFF;
+    --dark: #000;
+    --diabled: #DAF265;
+}
+
+body {
+    font-family: 'Koulen', sans-serif;
+    margin: 0%;
+    height: 100vh;
+    background-color: var(--diabled);
+}
+
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.bordeRedondeado {
+    border-radius: 5px;
+}
+
+.lista {
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 350px;
+}
+
+.fecha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.fechaIzquierda {
+    display: flex;
+    align-items: center;
+}
+
+#fechaNumero {
+    font-size: 50px;
+}
+
+#fechaTexto {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#fechaMes,
+#fechaNumero,
+#fechaTexto {
+    font-weight: bold;
+}
+
+#fechaMes,
+#fechaAnio {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+}
+
+input:focus {
+    outline: none;
+}
+
+.agregarBoton,
+.ordenBoton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.agregarBoton {
+    height: 35px;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: var(--diabled);
+}
+
+.ordenBoton {
+    background-color: var(--seconday);
+    color: var(--light);
+}
+
+.tarea {
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.done {
+    background-color: var(--diabled);
+    text-decoration: line-through;
+    color: var(--dark);
+}
